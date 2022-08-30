@@ -28,6 +28,7 @@ function btnEncriptar() {
     document.querySelector(".imgPersonajes").style.visibility = "hidden";
     document.querySelector(".btnCopiar").style.visibility = "visible";
     inputTexto.value = ""
+    alert("Texto Encriptado")
 
 }
 
@@ -57,12 +58,11 @@ function btnDesencriptar() {
     const textoDesencriptar = desencriptar(inputTexto.value)
     mensaje.value = textoDesencriptar;
     inputTexto.value = ""
-
+    alert("Texto Desencriptado")
 }
 
 function copiar() {
     mensaje.select()
     navigator.clipboard.writeText(mensaje.value)
     mensaje.value = ""
-    mensaje.alert("Texto copiado")
 }
