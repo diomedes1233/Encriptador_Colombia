@@ -64,5 +64,5 @@ function copiar() {
     mensaje.select()
     navigator.clipboard.writeText(mensaje.value)
     mensaje.value = ""
-    alert("Texto copiado")
+    mensaje.alert("Texto copiado")
 }
